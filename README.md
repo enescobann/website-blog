@@ -8,7 +8,7 @@ Bootstrap ve custom CSS ile oluşturulmuş kişisel blog sitem.
 * Bootstrap 5
 
 ## Çalıştırma
-Dosyaları indirip `index.html`'i tarayıcıda açmak yeterli.
+Dosyaları indirip `index.html`'i tarayıcıda açmak veya https://enescoban.vercel.app/ adresine gitmek.
 
 ## Geliştirme Notları
 - Proje, `alpine:3.18` Docker imajı kullanılarak geliştirilmiştir.
