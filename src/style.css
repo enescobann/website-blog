@@ -1,0 +1,191 @@
+/* Genel Ayarlar */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar .nav-link {
+  transition: color 0.3s, transform 0.3s;
+  margin: 0 10px;
+}
+
+.navbar .nav-link:hover {
+  color: #00f2fe !important;
+  transform: scale(1.1);
+}
+
+/* Ana İçerik Yapısı */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sayfa Arka Planları */
+#main-about {
+  background: linear-gradient(-45deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+#main-projects {
+  background: linear-gradient(135deg, #6f1775, #910647, #056f9c);
+  background-size: 400% 400%;
+  animation: techGradient 20s ease infinite;
+  color: #f0f0f0;
+}
+
+#main-contact {
+  background: linear-gradient(120deg, #9b9da1, #2a5298);
+  color: #fff;
+}
+
+/* Section Genel Stilleri */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+/* Hakkımda Sayfası */
+#about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin-bottom: 80px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#about img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+#about h1, #technic h1, #social h1 {
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(270deg, #ff512f, #dd2476, #ff512f);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Projeler Sayfası */
+#projects h2 {
+  font-weight: 800;
+  margin-bottom: 40px;
+  background: linear-gradient(270deg, #00f2fe, #4facfe, #00f2fe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 10s ease infinite;
+}
+
+#projects .card {
+  background: linear-gradient(145deg, rgba(31, 42, 56, 0.8), rgba(44, 62, 80, 0.8));
+  backdrop-filter: blur(5px);
+  color: #f0f0f0;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#projects .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+  background: linear-gradient(145deg, rgba(51, 71, 86, 0.9), rgba(31, 42, 56, 0.9));
+}
+
+/* İletişim Sayfası */
+#contact video {
+  width: 360px;
+  height: 360px;
+  border-radius: 2%;
+  object-fit: cover;
+  border: 2px solid #4d4a6e;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#contact video:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+#contact {
+  justify-content: center;
+  flex: 1;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  font-size: 1.25rem;
+  margin: 15px 0;
+}
+
+.contact-item a {
+  color: #00f2fe;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #4facfe;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #222, #444);
+  color: #f0f0f0;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 500;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+}
+
+/* Animasyonlar */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes techGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
